@@ -1,0 +1,273 @@
+:root {
+  font-family: Inter, "Microsoft YaHei", system-ui, sans-serif;
+  color: #172033;
+  background: #eef4ff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.hero {
+  color: #fff;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.32), transparent 28%),
+    linear-gradient(135deg, #2563eb, #7c3aed 55%, #111827);
+  padding: 24px min(6vw, 72px) 72px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.nav a {
+  opacity: 0.88;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
+.brand {
+  margin-right: auto;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.hero-content {
+  max-width: 1080px;
+  margin: 78px auto 0;
+}
+
+.tag {
+  display: inline-flex;
+  margin: 0 0 18px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 720px;
+  margin-bottom: 18px;
+  font-size: clamp(42px, 8vw, 76px);
+  line-height: 1;
+}
+
+.intro {
+  max-width: 680px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 18px;
+}
+
+main {
+  width: min(1080px, calc(100% - 32px));
+  margin: -42px auto 0;
+}
+
+.panel,
+.card {
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+}
+
+.panel {
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+.section-title p {
+  margin-bottom: 8px;
+  color: #2563eb;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.section-title h2 {
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+
+.score-board {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.score-board div {
+  padding: 18px;
+  border-radius: 18px;
+  background: #f8fafc;
+}
+
+.score-board span {
+  display: block;
+  margin-bottom: 8px;
+  color: #64748b;
+}
+
+.score-board strong {
+  font-size: 28px;
+}
+
+.reaction-box {
+  display: grid;
+  width: 100%;
+  min-height: 220px;
+  place-items: center;
+  border: 0;
+  border-radius: 26px;
+  color: #fff;
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.reaction-box:hover {
+  transform: translateY(-2px);
+}
+
+.reaction-box.idle {
+  background: linear-gradient(135deg, #0f172a, #334155);
+}
+
+.reaction-box.waiting {
+  background: linear-gradient(135deg, #dc2626, #f97316);
+}
+
+.reaction-box.ready {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+}
+
+.hint {
+  margin: 18px 0 0;
+  color: #64748b;
+}
+
+.actions {
+  margin-top: 18px;
+}
+
+.actions button {
+  padding: 10px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  color: #334155;
+  background: #fff;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.card {
+  padding: 24px;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.card p {
+  margin-bottom: 0;
+  color: #64748b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #fff;
+}
+
+th,
+td {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+th {
+  color: #1e293b;
+  background: #f1f5f9;
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
+footer {
+  padding: 32px 16px 42px;
+  color: #64748b;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-content {
+    margin-top: 48px;
+  }
+
+  .score-board,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    padding: 22px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
