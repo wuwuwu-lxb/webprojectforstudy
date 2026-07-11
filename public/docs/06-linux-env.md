@@ -33,13 +33,8 @@ echo $SITE_NAME
 
 ## 截图记录
 
-![环境变量配置截图](/images/linux-env-bashrc.png)
-
-图 1：向 ~/.bashrc 写入项目环境变量。
-
-![环境变量输出截图](/images/linux-env-output.png)
-
-图 2：读取环境变量 SITE_NAME 的值。
+![21514cb78c244f041c8e6c8d6228e507](/images/21514cb78c244f041c8e6c8d6228e507.png)
+图 1：向 ~/.bashrc 写入项目环境变量，并读取环境变量 SITE_NAME 的值。
 
 ## 实验结果
 

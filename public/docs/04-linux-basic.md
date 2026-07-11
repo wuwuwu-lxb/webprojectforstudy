@@ -3,6 +3,7 @@
 ## 实验目的
 
 熟悉 Linux 命令行中的文件导航、目录管理、软件包安装和服务查看等基础操作。
+本步骤记录 Linux 基本命令，并根据发行版选择 apt 或 pacman 安装软件。
 
 ## 常用命令
 
@@ -15,7 +16,7 @@
 | cp | 复制文件 |
 | mv | 移动或重命名文件 |
 | rm | 删除文件 |
-| sudo apt install | 安装软件包 |
+| sudo apt install / sudo pacman -S | 安装软件包 |
 
 ## 主要步骤
 
@@ -35,20 +36,29 @@ ls -ld /var/www/software-site
 
 ### 步骤 3：安装基础工具
 
+Ubuntu / Debian：
+
 ```bash
 sudo apt update
 sudo apt install git curl vim nginx openssh-server -y
 ```
 
+Arch Linux：
+
+```bash
+sudo pacman -Syu
+sudo pacman -S git curl vim nginx openssh
+```
+
 ## 截图记录
 
-![Linux 基本命令截图](/images/linux-basic-commands.png)
+![e858503a39dbaba0dc794b467de13813](/images/e858503a39dbaba0dc794b467de13813.png)
 
 图 1：执行目录查看和文件管理命令。
 
-![软件安装截图](/images/linux-install-tools.png)
+![fdc579c76a43a2e0f0310be2da9cfc0b](/images/fdc579c76a43a2e0f0310be2da9cfc0b.png)
 
-图 2：使用 apt 安装基础工具。
+图 2：使用 pacman 安装基础工具。
 
 ## 实验结果
 

@@ -22,11 +22,19 @@
 
 ### 步骤 2：安装 Node.js
 
-在 Ubuntu WSL2 中安装 Node.js 和 npm：
+在 WSL2 Linux 中安装 Node.js 和 npm。Ubuntu 可使用 apt，Arch 可使用 pacman：
+
+Ubuntu / Debian：
 
 ```bash
 sudo apt update
 sudo apt install nodejs npm -y
+```
+
+Arch Linux：
+
+```bash
+sudo pacman -S nodejs npm
 node -v
 npm -v
 ```
@@ -42,14 +50,13 @@ npm run dev
 
 ## 截图记录
 
-![Node.js 版本截图](/images/web-env-node-version.png)
+![ad57c4857d2b2421e58bc162e15e6f00 1](/images/ad57c4857d2b2421e58bc162e15e6f00%201.png)
 
-图 1：在 Ubuntu WSL2 中查看 Node.js 和 npm 版本。
+图 1：在 WSL2 Linux 中查看 Node.js 和 npm 版本。
 
-![Vite 本地运行截图](/images/web-env-vite-dev.png)
+![5841b55f1a8c193678bd220e4d361e31](/images/5841b55f1a8c193678bd220e4d361e31.png)
 
 图 2：使用 `npm run dev` 启动 Vite 本地开发服务器。
-
 ## 实验结果
 
 浏览器能够访问 Vite 开发服务器页面，说明 Web 开发环境配置成功。

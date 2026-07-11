@@ -2,7 +2,7 @@
 
 ## 实验成果
 
-本实验完成了一个用于展示实验过程的静态文档站点。网站内容覆盖 Web 开发环境、Git 代码管理、WSL2 Ubuntu、Linux 基础操作、用户权限、环境变量、SSH 远程管理和 Nginx 部署等内容。
+本实验完成了一个用于展示实验过程的静态文档站点。网站内容覆盖 Web 开发环境、Git 代码管理、WSL2 Linux、Linux 基础操作、用户权限、环境变量、SSH 远程管理和 Nginx 部署等内容。
 
 ## 遇到的问题
 
@@ -18,7 +18,7 @@
 - Vite 可以快速创建和构建静态网站。
 - Markdown 适合编写实验报告和过程记录。
 - Git 可以记录项目版本并推送到远端仓库。
-- WSL2 Ubuntu 可以模拟 Linux 服务器环境。
+- WSL2 Linux 可以模拟真实 Linux 服务器环境。
 - Nginx 可以作为静态资源服务器部署网站。
 - SSH 是远程管理 Linux 环境的重要工具。
 
@@ -27,7 +27,7 @@
 | 成员 | 分工 | 具体任务 |
 |---|---|---|
 | 成员 A | 网站开发 | 页面结构、样式、Markdown 渲染 |
-| 成员 B | 环境配置 | VS Code、Node.js、Git、WSL2 Ubuntu |
+| 成员 B | 环境配置 | VS Code、Node.js、Git、WSL2 Linux |
 | 成员 C | Linux 与部署 | 用户权限、SSH、Nginx 部署 |
 | 成员 D | 文档整理 | 截图、实验报告、README |
 

@@ -8,10 +8,20 @@
 
 ### 步骤 1：安装并启动 Nginx
 
+Ubuntu / Debian：
+
 ```bash
 sudo apt install nginx -y
 sudo service nginx start
 sudo service nginx status
+```
+
+Arch Linux：
+
+```bash
+sudo pacman -S nginx
+sudo nginx
+ps -ef | grep nginx
 ```
 
 浏览器访问：
@@ -78,24 +88,7 @@ sudo service nginx restart
 http://localhost:8080
 ```
 
-## 截图记录
-
-![Nginx 默认页截图](/images/nginx-default-page.png)
-
-图 1：浏览器访问 Nginx 默认页面。
-
-![项目构建截图](/images/npm-build.png)
-
-图 2：执行 npm run build 生成 dist 目录。
-
-![Nginx 配置截图](/images/nginx-site-config.png)
-
-图 3：配置 Nginx 静态站点。
-
-![网站部署成功截图](/images/deploy-success.png)
-
-图 4：浏览器访问部署后的网站。
 
 ## 实验结果
 
-网站成功部署到 WSL2 Ubuntu 的 Nginx 服务中，并可以通过浏览器访问。
+网站成功部署到 WSL2 Linux 的 Nginx 服务中，并可以通过浏览器访问。

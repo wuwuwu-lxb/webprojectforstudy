@@ -32,14 +32,12 @@ ls -ld /var/www/software-site
 
 ## 截图记录
 
-![用户信息截图](/images/linux-user-info.png)
+![844d4a53b62ca5b57950465b48ff9d05](/images/844d4a53b62ca5b57950465b48ff9d05.png)
 
 图 1：查看当前用户、用户组和新建用户信息。
 
-![目录权限截图](/images/linux-permission.png)
-
-图 2：查看网站部署目录的权限配置。
 
 ## 实验结果
 
 完成了 Linux 用户查看、部署用户创建和网站目录权限配置，理解了权限管理在 Web 部署中的作用。
+此次实验为了方便只使用了root进行网站的部署，对于生产环境要格外注意权限划分

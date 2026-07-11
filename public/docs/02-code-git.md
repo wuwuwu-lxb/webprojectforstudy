@@ -36,12 +36,10 @@ git push -u origin main
 
 ## 截图记录
 
-![Git 状态截图](/images/git-status.png)
-
+![6cd87969347d4e0a7cb111ec5792fd3b](/images/6cd87969347d4e0a7cb111ec5792fd3b.png)
 图 1：查看 Git 工作区状态。
 
-![GitHub 仓库截图](/images/github-repository.png)
-
+![0d2bb8c66c786222b4ea9ebc9d0711d7](/images/0d2bb8c66c786222b4ea9ebc9d0711d7.png)
 图 2：项目代码推送到 GitHub 远端仓库。
 
 ## 实验结果
